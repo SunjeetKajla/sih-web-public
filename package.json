@@ -20,7 +20,7 @@
     "webpack-dev-server": "^4.15.1"
   },
   "scripts": {
-    "start": "npm run build && serve -s build -l $PORT",
+    "start": "serve -s build -p $PORT",
     "dev": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
