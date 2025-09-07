@@ -20,7 +20,7 @@
     "webpack-dev-server": "^4.15.1"
   },
   "scripts": {
-    "start": "node serve.js",
+    "start": "npm run build && node serve.js",
     "dev": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -28,6 +28,9 @@
   },
   "devDependencies": {
     "react-scripts": "^5.0.1"
+  },
+  "engines": {
+    "node": ">=16.0.0"
   },
   "eslintConfig": {
     "extends": [
