@@ -107,6 +107,17 @@ const Map = () => {
     }
   };
 
+  const getHazardIcon = (type) => {
+    switch (type.toLowerCase()) {
+      case 'storm': return IoThunderstorm;
+      case 'high waves': return IoWater;
+      case 'strong current': return IoArrowForward;
+      case 'debris': return IoWarning;
+      case 'pollution': return IoSkull;
+      default: return IoHelp;
+    }
+  };
+
 
 
   if (!userLocation) {

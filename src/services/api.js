@@ -149,4 +149,27 @@ export const statisticsAPI = {
 
 
 
+// Social Media API
+export const socialMediaAPI = {
+  // Get social media mentions
+  getSocialMentions: async (filters = {}) => {
+    try {
+      const response = await api.get('/api/social-media/mentions', { params: filters });
+      return response.data;
+    } catch (error) {
+      throw new Error(error.response?.data?.detail || 'Failed to fetch social media mentions');
+    }
+  },
+
+  // Analyze sentiment of social media posts
+  analyzeSentiment: async (text) => {
+    try {
+      const response = await api.post('/api/social-media/analyze-sentiment', { text });
+      return response.data;
+    } catch (error) {
+      throw new Error(error.response?.data?.detail || 'Failed to analyze sentiment');
+    }
+  },
+};
+
 export default api;
