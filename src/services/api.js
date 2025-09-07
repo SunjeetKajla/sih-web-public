@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // FastAPI backend URL - update this when your backend is deployed
-const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:8000';
+const API_BASE_URL = process.env.REACT_APP_API_URL || 'https://sih-web-server.onrender.com';
 
 const api = axios.create({
   baseURL: API_BASE_URL,
