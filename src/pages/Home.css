@@ -1,0 +1,162 @@
+.home-container {
+  background-color: #F8F9FA;
+  min-height: 100vh;
+}
+
+.header {
+  padding: 40px 20px;
+  background: #2C3E50;
+  text-align: center;
+  color: white;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #BDC3C7;
+  margin: 8px 0 0 0;
+}
+
+.stats-container {
+  display: flex;
+  padding: 20px;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.stat-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  flex: 1;
+  min-width: 120px;
+  border-left: 4px solid;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.stat-value {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.stat-label {
+  font-size: 14px;
+  color: #7F8C8D;
+}
+
+.section {
+  padding: 20px;
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #2C3E50;
+  margin-bottom: 20px;
+}
+
+.actions-container {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.action-card {
+  flex: 1;
+  min-width: 150px;
+  padding: 25px;
+  border-radius: 15px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  text-align: center;
+}
+
+.action-card:hover {
+  transform: translateY(-2px);
+}
+
+.action-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 12px 0 8px 0;
+}
+
+.action-subtitle {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.activity-container {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.activity-item {
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #ECF0F1;
+}
+
+.activity-item:last-child {
+  border-bottom: none;
+}
+
+.activity-text {
+  margin-left: 15px;
+  flex: 1;
+}
+
+.activity-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #2C3E50;
+  margin-bottom: 4px;
+}
+
+.activity-time {
+  font-size: 14px;
+  color: #7F8C8D;
+}
+
+.tips-container {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.tip {
+  font-size: 16px;
+  color: #2C3E50;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.tip:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .actions-container {
+    flex-direction: column;
+  }
+  
+  .action-card {
+    min-width: auto;
+  }
+  
+  .stats-container {
+    flex-direction: column;
+  }
+}
