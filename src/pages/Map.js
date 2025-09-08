@@ -29,7 +29,7 @@ const Map = () => {
 
   const fetchReports = async () => {
     try {
-      const response = await fetch('https://sih-web-server.onrender.com/api/reports');
+      const response = await fetch('http://https://sih-web-server.onrender.com/api/reports');
       if (response.ok) {
         const reports = await response.json();
         setHazardReports(reports);
