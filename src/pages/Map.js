@@ -29,7 +29,7 @@ const Map = () => {
 
   const fetchReports = async () => {
     try {
-      const response = await fetch('http://localhost:8000/api/reports');
+      const response = await fetch('https://sih-web-server.onrender.com/api/reports');
       if (response.ok) {
         const reports = await response.json();
         setHazardReports(reports);
@@ -71,7 +71,7 @@ const Map = () => {
     }
 
     try {
-      const response = await fetch('http://localhost:8000/api/reports', {
+      const response = await fetch('https://sih-web-server.onrender.com/api/reports', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
