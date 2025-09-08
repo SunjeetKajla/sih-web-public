@@ -147,8 +147,6 @@ export const statisticsAPI = {
   },
 };
 
-
-
 // Social Media API
 export const socialMediaAPI = {
   // Get social media mentions
