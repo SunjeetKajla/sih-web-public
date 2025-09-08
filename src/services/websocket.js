@@ -7,7 +7,7 @@ class WebSocketService {
     this.listeners = new Map();
   }
 
-  connect(url = process.env.REACT_APP_WS_URL || 'https://sih-web-server.onrender.com') {
+  connect(url = process.env.REACT_APP_WS_URL || 'http://localhost:8000') {
     if (this.socket) {
       this.disconnect();
     }
